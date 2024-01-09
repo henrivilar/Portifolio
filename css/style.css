@@ -59,6 +59,25 @@ nav a {
     color: #000031;
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
+    transform: 2ms ease-in;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+nav a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: #000031;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+
+nav a:hover:before {
+    width: 70%;
 }
 
 .language {
@@ -94,12 +113,12 @@ main {
 }
 
 section {
-    background-image: linear-gradient(to top right, #000031, #2666cb);
     color: #D9D9D9;
     padding: 5rem;
 }
 
 .first-section {
+    background-image: linear-gradient(to top right, #000031, #2666cb);
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
@@ -146,6 +165,28 @@ section p a:hover {
 .perfil:hover {
     scale: 1.1;
 }
+
+.second-section {
+    background-image: linear-gradient(to top left, #063d1e, #83e1ad);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    min-height: 650px;
+}
+
+#imac img {
+    height: 800px;
+}
+
+#imac iframe {
+    position: absolute;
+    top: 1071px;
+    left: 902px;
+    height: 499px;
+    width: 883px;
+}
+
 
 footer {
     background-color: #D9D9D9;
