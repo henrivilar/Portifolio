@@ -40,6 +40,7 @@ header {
 
 .box-img:hover {
     scale: 1.5;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -158,12 +159,12 @@ section p a:hover {
 }
 
 .perfil {
-    border-radius: 50%;
     width: 100%;
 }
 
 .perfil:hover {
-    scale: 1.1;
+    transform: translate(-10px, -10px);
+    transition: 0.5s;
 }
 
 .second-section {
@@ -186,7 +187,6 @@ section p a:hover {
     height: 499px;
     width: 883px;
 }
-
 
 footer {
     background-color: #D9D9D9;
