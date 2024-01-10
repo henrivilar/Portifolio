@@ -165,15 +165,19 @@ section p a:hover {
 .perfil:hover {
     transform: translate(-10px, -10px);
     transition: 0.5s;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .second-section {
     background-image: linear-gradient(to top left, #063d1e, #83e1ad);
+    min-height: 650px;
+}
+
+.imac-section {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
     align-items: center;
-    min-height: 650px;
 }
 
 #imac img {
@@ -182,10 +186,32 @@ section p a:hover {
 
 #imac iframe {
     position: absolute;
-    top: 1071px;
-    left: 902px;
-    height: 499px;
+    top: 1151px;
+    left: 822px;
+    height: 500px;
     width: 883px;
+}
+
+.iphone-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+}
+
+#iphone img {
+    height: 700px;
+    width: 368px;
+}
+
+#iphone iframe {
+    position: absolute;
+    top: 2090px;
+    left: 329px;
+    height: 676px;
+    width: 337px;
+    border-radius: 42px;
+    overflow: hidden;
 }
 
 footer {
