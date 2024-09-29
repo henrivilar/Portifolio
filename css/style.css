@@ -200,8 +200,10 @@ section p a:hover {
 }
 
 #iphone img {
+    position: relative;
     height: 700px;
     width: 368px;
+    z-index: 1;
 }
 
 #iphone iframe {
